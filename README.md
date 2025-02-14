@@ -9,11 +9,13 @@ Install Python 3.x and the following Python libraries:
 yfinance
 pandas
 numpy
+
 2. Run the Project
 Place stock symbols in the SLURM job scripts (e.g., AAPL, MSFT).
 Use SLURM to parallelize the stock data fetching and analysis on compute nodes.
 Merge results on the controller node using the merge_results.py script.
-Project Structure
+
+3. Project Structure
 scripts/ : Contains Python scripts and SLURM job scripts.
 data/ : Folder to store stock data (CSV files).
 final_report.csv : Merged results from all stock symbols.
